@@ -13,7 +13,7 @@
 
 .sidebar .menu {
   cursor: pointer;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 /* Style for New-Chat Class */
@@ -46,7 +46,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 14px;
+  font-size: 13px;
   padding: 8px 10px;
   color: rgb(73, 73, 73);
   border-radius: 50px;
@@ -68,7 +68,6 @@
   padding: 5px 10px;
   gap: 10px;
   font-size: 12px;
-  justify-content: center;
 }
 
 .bottom img {
