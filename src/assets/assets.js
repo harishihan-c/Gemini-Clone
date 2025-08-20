@@ -9,6 +9,12 @@ import compass from "../assets/compass.png"
 import message from '../assets/comment.png'
 import bulb from '../assets/lightbulb.png'
 import code from '../assets/code.png'
+import send from '../assets/send.png'
+import voice from '../assets/voice-search.png'
+import gallary from '../assets/image.png'
+
+
+
 
 export const assets = {
     menu,
@@ -21,5 +27,8 @@ export const assets = {
     compass,
     code,
     bulb,
-    message
+    message,
+    send,
+    voice,
+    gallary
 }
