@@ -12,7 +12,7 @@ import code from '../assets/code.png'
 import send from '../assets/send.png'
 import voice from '../assets/voice-search.png'
 import gallary from '../assets/image.png'
-
+import gemini from '../assets/gemini.svg'
 
 
 
@@ -30,5 +30,6 @@ export const assets = {
     message,
     send,
     voice,
-    gallary
+    gallary,
+    gemini
 }
