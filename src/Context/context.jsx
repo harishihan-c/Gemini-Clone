@@ -4,15 +4,15 @@ import generate from "../Config/config";
 export const Context = createContext();
 
 const ContextProvider = (props) => {
-  const [input, setInput] = useState("");
-  const [result, setResult] = useState(false);
+  const [input, setInput] = useState("");  //For input field
+  const [showResult, setShowResult] = useState(false);  //
   const [loading, setLoading] = useState(false);
-  const [response, setResponse] = useState(null);
+  const [response, setResponse] = useState("");
   const [recentPrompt, setRecentPrompt] = useState("");
-  const [prevPrompt, setPrevPrompt] = useState([]);
+  const [prevPrompt, setPrevPrompt] = useState([]); //For Sidebar
 
   const onSent = async () => {
-    setResult(true);
+    setShowResult(true);
     setLoading(true);
 
     const AIresponse = await generate(input);
@@ -27,8 +27,8 @@ const ContextProvider = (props) => {
     input,
     setInput,
     onSent,
-    setResult,
-    result,
+    showResult, 
+    setShowResult,
     setLoading,
     recentPrompt,
     setRecentPrompt,

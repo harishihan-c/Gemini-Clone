@@ -9,8 +9,7 @@ function Main() {
     setInput,
     input, 
     onSent, 
-    setResult, 
-    result, 
+    showResult, setShowResult,
     setLoading,
     recentPrompt,
     setRecentPrompt,
@@ -25,7 +24,7 @@ function Main() {
       </div>
 
       <div className="main-container">
-        {!result ? (
+        {!showResult ? (
           <>
             <div className="greet">
               <p>
