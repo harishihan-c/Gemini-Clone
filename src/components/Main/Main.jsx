@@ -5,16 +5,18 @@ import { Context } from "../../Context/context";
 import generate from "../../Config/config";
 
 function Main() {
-  const { 
+  const {
     setInput,
-    input, 
-    onSent, 
-    showResult, setShowResult,
+    input,
+    onSent,
+    showResult,
+    setShowResult,
     setLoading,
+    loading,
     recentPrompt,
     setRecentPrompt,
     response,
-    } = useContext(Context);
+  } = useContext(Context);
 
   return (
     <div className="main">
@@ -65,12 +67,22 @@ function Main() {
           </>
         ) : (
           <div className="result">
-            <div className="reult-title">
-              <img src="" alt="" />
+            <div className="result-title">
               <p>{recentPrompt}</p>
             </div>
-            <p>{response}</p>
-            
+            <div className="result-data">
+              <img src={assets.gemini} alt="" />
+
+              {loading ? (
+                <div className="loader">
+                  <hr />
+                  <hr />
+                  <hr />
+                </div>
+              ) : (
+                <p>{response}</p>
+              )}
+            </div>
           </div>
         )}
 
