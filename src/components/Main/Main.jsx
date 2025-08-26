@@ -80,7 +80,7 @@ function Main() {
                   <hr />
                 </div>
               ) : (
-                <p>{response}</p>
+                <p dangerouslySetInnerHTML={{ __html: response }}></p>
               )}
             </div>
           </div>
