@@ -35,6 +35,7 @@
 .recent {
   display: flex;
   flex-direction: column;
+  animation: fadeIn 1.5s;
 }
 
 .recent .recent-title {
@@ -72,4 +73,10 @@
 
 .bottom img {
   width: 13px;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    display: none;
+  }
 }

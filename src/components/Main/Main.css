@@ -112,6 +112,10 @@
   cursor: pointer;
 }
 
+.search-box .send {
+  animation: fadeIn 100ms;
+}
+
 .main-bottom p {
   margin: 10px auto;
   font-size: 10px;
@@ -181,3 +185,26 @@
     background-position: 800px 0;
   }
 }
+
+@media (max-width: 600px) {
+  .main-bottom input {
+    flex: none;
+    width: 150px;
+  }
+
+  .search-box img {
+    width: 16px;
+  }
+
+  .search-box div {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 300px) {
+  .main .cards {
+    display: none;
+  }
+}
+
+
