@@ -97,13 +97,14 @@ function Main() {
             <div>
               <img src={assets.gallary} alt="" />
               <img src={assets.voice} alt="" />
-              <img
+              {input
+              ?<img
                 onClick={() => {
                   onSent();
                 }}
                 src={assets.send}
                 alt=""
-              />
+              />: null}
             </div>
           </div>
           <p>
